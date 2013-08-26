@@ -78,11 +78,12 @@
 % Arg1: Institution
 % Arg2: Program
 % Arg3: Dates
-\newcommand{\resedentry}[3]{
+\newcommand{\resedentry}[4]{
   \begin{minipage}{\textwidth}
   \vspace{-10pt}
   \textbf{#1}\\
   \textit{#2}\hfill\textcolor{light-grey}{#3}\\
+  #4
   \vspace{0.5\baselineskip}
   \end{minipage}
 }
@@ -92,21 +93,36 @@
 % Arg2: Company or Office---Company
 % Arg3: Location, PROV
 % Arg4: Date Range
-\newcommand{\resentryheader}[4]{
+\newcommand{\resentryheader}[5]{
     \vspace{-5pt}
     \textbf{#1}\hspace{\stretch{1}}\textcolor{light-grey}{#3}\\
     \textit{#2}\hspace{\stretch{1}}\textcolor{light-grey}{#4}\\
+    \if\relax\detokenize{#5}\relax
+    \else
+      #5\\
+    \fi
+    \vspace{2pt}
 }
  
 % This is a resume entry with a header and bullet items
-\newenvironment{resentry}[4]{
+\newenvironment{resentry}[5]{
   \begin{minipage}{\textwidth}
-    \resentryheader{#1}{#2}{#3}{#4}
+    \resentryheader{#1}{#2}{#3}{#4}{#5}
         \vspace{-\baselineskip}
     \begin{itemize}[noitemsep,nolistsep]
 }{
     \end{itemize}
         \vspace{\baselineskip}
+        \end{minipage}
+}
+
+% This is a header for creating sub entries
+\newenvironment{ressubentry}[1]{
+  \begin{minipage}{\textwidth}
+    \resitem{\textbf{#1}}
+    \begin{itemize}[noitemsep,nolistsep]
+}{
+    \end{itemize}
         \end{minipage}
 }
  
@@ -117,53 +133,92 @@
 \begin{document}
  
 \begin{tabularx}{\linewidth}{X r}
-\multirow{3}{*}{\Huge\textbf{\name}} & \\& \city \\& \email\\\\
+\multirow{4}{*}{\Huge\textbf{\name}} & \\& \city \\& \email \\& \phone\\\\
 \end{tabularx}\\
  
 \begin{ressection}{experience}
-  \begin{resentry}{Programmer}{OneStepRemoved.com}{Dallas, TX}{May 2012 --- August 2013}
-    \resitem{Developed Neural Networks used for predicting future market conditions in the forex markets.}
-    \resitem{Used Test Driven Development.}
-    \resitem{Designed the architecture of the software application.}
-    \resitem{Designed and implemented a secure networking protocol in a server/client infrastructure.}
-    \resitem{Communicated with clients daily and solved any issues they brought up.}
-    \resitem{Implemented many different frameworks into the application. (Encog,ZMQ,OpenSSL)}
+  \begin{resentry}{Programmer}{OneStepRemoved.com}{Dallas, TX}{May 2012 --- August 2013}{Worked as the sole developer throughout this project}
+    \begin{ressubentry}{Software Engineering}
+      \resitem{Developed Neural Networks used for predicting future market conditions in the currency market}
+      \resitem{Implemented Test Driven Development}
+      \resitem{Designed the architecture of the software application from project requirements}
+      \resitem{Designed an API that can be used from many different currency market trading applications}
+      \resitem{Optimized the application to be run in real time with the currency market}
+      \resitem{Communicated with clients daily and resolved technical issues}
+    \end{ressubentry}
+    \begin{ressubentry}{Scientific Programming/Machine Learning}
+      \resitem{Developed Neural Networks used for predicting future market conditions in the currency market}
+      \resitem{Created both supervised and unsupervised learning algorithms for neural networks (Genetic, Levenberg-Marquardt, Reslient Propagation, etc)}
+      \resitem{Implemented many different type of Neural Networks (Elman, Feedforward) }
+    \end{ressubentry}
+    \begin{ressubentry}{Security}
+      \resitem{Set up protocol to authenticate connections}
+      \resitem{Used RSA encryption to send encrypted messages from the server}
+    \end{ressubentry}
+    \begin{ressubentry}{Distributed Networking}
+      \resitem{Designed and implemented a secure networking protocol in a server/client infrastructure}
+    \end{ressubentry}
+    \begin{ressubentry}{Tools and Languages}
+      \resitem{Implemented three different frameworks (Encog, ZMQ, OpenSSL) into the application}
+      \resitem{Used C\#/.NET, C and C++}
+      \resitem{Programmed in Visual Studio}
+    \end{ressubentry}
   \end{resentry}
  
-  \begin{resentry}{Proctor}{CS Department --- University of Texas at Austin}{Austin, TX}{August 2011 --- May 2012}
-    \resitem{Led a discussion section of 20 - 30 students every week.}
-    \resitem{Graded homework assignments and tests.}
+  \begin{resentry}{Proctor}{CS Department --- University of Texas at Austin}{Austin, TX}{August 2011 --- May 2012}{}
+    \resitem{Directed a discussion section of 20 to 30 students every week for a UT Logic class}
+%    \resitem{Graded weekly homework assignments and monthly tests}
+    \resitem{Taught programming skills in Python to 50 students}
   \end{resentry}
  
-  \begin{resentry}{Intern}{Virtual MGA}{Austin, TX}{August 2010 --- May 2011}
-    \resitem{Developed a system to migrate clients from an older version to the newest version of the software.}
-    \resitem{Acted as a liaison between the company and an out-of-country programming team.}
+  \begin{resentry}{Intern}{Virtual MGA}{Austin, TX}{August 2010 --- May 2011}{}
+    \resitem{Developed a system to migrate one database schema to another}
+    \resitem{Implemented third-party systems}
+    \resitem{Served as a liaison between the company and an out-of-country programming team}
   \end{resentry}
  
-  \begin{resentry}{Tutor}{CS Department --- University of Texas at Austin}{Austin, TX}{August 2010 --- May 2011}
-    \resitem{Developed scripts to grade students' programming assignments.}
-    \resitem{Graded homework assignments and tests}
+  \begin{resentry}{Tutor}{CS Department --- University of Texas at Austin}{Austin, TX}{August 2010 --- May 2011}{}
+    \resitem{Developed scripts to grade students' programming assignments}
+    \resitem{Tutored programming skills in Python and Java along with programming theory}
+%    \resitem{Graded homework assignments and tests}
   \end{resentry}
  
-  \begin{resentry}{Student Developer}{Institute for Human and Machine Cognition}{Pensacola, FL}{May 2010 --- August 2010}
-    \resitem{Ran weekly tutorial sessions for 30 to 40 students in engineering/business calculus and linear algebra.}
+  \begin{resentry}{Student Developer}{Institute for Human and Machine Cognition}{Pensacola, FL}{May 2010 --- August 2010}{}
+    \resitem{Developed an experiment collection server}
+    \resitem{Server allowed multiple clients to view the same information at the same time}
+    \resitem{Server displayed statistics and graphs on the ongoing experiment}
   \end{resentry}
  
 \end{ressection}
  
+
+
+% Education
+\vspace{15pt}
+\begin{tightressection}{education}
+  \resedentry{University of Texas at Austin}{Bachelor of Sciences (Computer Science)}{Present}{Currently taking the last three classes needed to complete my degree online}
+\end{tightressection}
+
 % Volunteer Experience
-%\begin{ressection}{Extra-Curricular/Volunteer work}
-% \begin{resentry}{Medical First Responder}{Carleton University Student Emergency Response Team --- Carleton University}{Ottawa, ON}{September 2007 --- Present}
-%    \resitem{Work as a member within the team to provide medical first response services to Carleton University.}
-%    \resitem{Assist members of the Carleton community, using training as an Advanced Medical First Responder, with injuries or medical emergencies}
-%    \resitem{Cover at least one twelve hour shift and attend at least two hours of training each week}
-%  \end{resentry} 
-%\end{ressection}
+\begin{tightressection}{Extra-Curricular}
+ \begin{resentry}{Lambda Chi Alpha}{University of Texas at Austin}{Austin, TX}{August 2008 ---May 2012}{}
+    \begin{ressubentry}{President}
+      \resitem{Lead weekly meetings}
+      \resitem{Solved disputes between chapter members}
+      \resitem{Set chapter goals for the year}
+    \end{ressubentry}
+    \begin{ressubentry}{Alumni Secretary}
+      \resitem{Updated the Alpha Mu chapter alumni with monthly newsletters}
+      \resitem{Programmed and hosted the Lambda Chi Alpha Alumni Golf Tournament, benefiting the North American Food Drive}
+    \end{ressubentry}
+  \end{resentry} 
+\end{tightressection}
      
 % Awards
+\vspace{-20pt}
 \begin{tightressection}{awards}
   \begin{rescolumn}
-      \resitem{Tracor/McBee Scholarship (\$1000), Fall 2009 --- Spring 2010}
+      \resitem{Tracor/McBee Scholarship (\$1000), \\ Fall 2009 --- Spring 2010}
     \end{rescolumn}
   \begin{rescolumn}
       \resitem{University of Texas General Scholarship (\$10000), Fall 2008 --- Spring 2010}
@@ -205,10 +260,6 @@
 %  \boardentry{CUSERT Executive}{External-Communications}{May 2008 --- May 2009}
 %\end{tightressection}
  
-% Education
-\vspace{-15pt}
-\begin{tightressection}{education}
-  \resedentry{University of Texas at Austin}{Bachelor of Sciences (Computer Science)}{Spring 2012}
-\end{tightressection}
+
  
 \end{document}
