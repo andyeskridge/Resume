@@ -59,6 +59,12 @@
     \vspace{2pt}
     \item \begin{flushleft} #1 \end{flushleft}
 }
+
+% A resitem is a simple list element
+\newcommand{\resitemcenter}[1]{
+    \vspace{2pt}
+    \item \begin{center} #1 \end{center}
+}
  
 % An entry for memberships
 % Arg1: Board
@@ -137,29 +143,32 @@
 \end{tabularx}\\
  
 \begin{ressection}{experience}
-  \begin{resentry}{Programmer}{OneStepRemoved.com}{Dallas, TX}{May 2012 --- August 2013}{Worked as the sole developer throughout this project}
+  \begin{resentry}{Programmer}{OneStepRemoved.com}{Dallas, TX}{May 2012 --- August 2013}{In my work at OneStepRemoved, I was selected to work on an internal research and development project to create a currency trading system.  Throughout this project, I worked as the lead designer and sole developer.  It has been a great opportunity to test myself in all aspects of programming and software engineering.}
     \begin{ressubentry}{Software Engineering}
-      \resitem{Developed Neural Networks used for predicting future market conditions in the currency market}
-      \resitem{Implemented Test Driven Development}
-      \resitem{Designed the architecture of the software application from project requirements}
-      \resitem{Designed an API that can be used from many different currency market trading applications}
-      \resitem{Optimized the application to be run in real time with the currency market}
-      \resitem{Communicated with clients daily and resolved technical issues}
-    \end{ressubentry}
+%      \resitem{Developed Neural Networks used for predicting future market conditions in the currency market}
+      \resitem{Implemented Test Driven Development procedures for use on the project.  These procedures drove development and the resulting unit tests were continually useful.}
+      \resitem{Designed the architecture of the currency trading application to be modular and robust, using established software engineering principles. }
+      \resitem{Designed an API that can be used to plug in several different online currency market trading services}
+      \resitem{Optimized the application to be run in real time using sane data structures}
+      \resitem{Conducted daily status and enhancement meetings with clients focusing on identifying and resolving technical and operational issues}
+      \resitem{Developed client-server model with login authentication}
+	\end{ressubentry}
     \begin{ressubentry}{Scientific Programming/Machine Learning}
-      \resitem{Developed Neural Networks used for predicting future market conditions in the currency market}
-      \resitem{Created both supervised and unsupervised learning algorithms for neural networks (Genetic, Levenberg-Marquardt, Reslient Propagation, etc)}
-      \resitem{Implemented many different type of Neural Networks (Elman, Feedforward) }
+      \resitem{Evaluated several learning technologies and selected Neural Networks as the means of learning to predict future market condition for currency trading}
+      \resitem{Created both supervised and unsupervised learning algorithms for neural networks (Genetic Algorithm, Levenberg-Marquardt, Resilient Propagation, to name a few)}
+      \resitem{Implemented many different type of Neural Networks (Elman, Feedforward, to name a few) }
+      \resitem{Designed the application to be run without human interaction, including developing logic to automatically retrain the neural network and transition it to online use in real time}
     \end{ressubentry}
     \begin{ressubentry}{Security}
-      \resitem{Set up protocol to authenticate connections}
-      \resitem{Used RSA encryption to send encrypted messages from the server}
+      \resitem{Implemented a procedure to authenticate connections in a client-server architecture}
+      \resitem{Used RSA encryption to send encrypted messages from the server to clients}
     \end{ressubentry}
     \begin{ressubentry}{Distributed Networking}
-      \resitem{Designed and implemented a secure networking protocol in a server/client infrastructure}
+      \resitem{Designed and implemented a secure networking implementation in a server/client infrastructure}
+      \resitem{Developed a parallel processing system for training Neural Networks that ran on a 12-core computer, cutting training time from 2 days to 30 seconds}
     \end{ressubentry}
     \begin{ressubentry}{Tools and Languages}
-      \resitem{Implemented three different frameworks (Encog, ZMQ, OpenSSL) into the application}
+      \resitem{Made use of three different libraries in the application: Encog, ZMQ, OpenSSL}
       \resitem{Used C\#/.NET, C and C++}
       \resitem{Programmed in Visual Studio}
     \end{ressubentry}
@@ -172,31 +181,45 @@
   \end{resentry}
  
   \begin{resentry}{Intern}{Virtual MGA}{Austin, TX}{August 2010 --- May 2011}{}
-    \resitem{Developed a system to migrate one database schema to another}
-    \resitem{Implemented third-party systems}
-    \resitem{Served as a liaison between the company and an out-of-country programming team}
+    \resitem{Developed a procedure to migrate one database schema to another}
+    \resitem{Communicated requirements, bugs, and operation issues regularly with our out-of-country programming team, and updated management on programming progress}
   \end{resentry}
  
   \begin{resentry}{Tutor}{CS Department --- University of Texas at Austin}{Austin, TX}{August 2010 --- May 2011}{}
     \resitem{Developed scripts to grade students' programming assignments}
-    \resitem{Tutored programming skills in Python and Java along with programming theory}
+    \resitem{Tutored programming theory and skills in Python and Java}
 %    \resitem{Graded homework assignments and tests}
   \end{resentry}
  
   \begin{resentry}{Student Developer}{Institute for Human and Machine Cognition}{Pensacola, FL}{May 2010 --- August 2010}{}
-    \resitem{Developed an experiment collection server}
+    \resitem{Developed a web-based server to collect, display, and stream experiment data collected from an aircraft instrument simulation}
     \resitem{Server allowed multiple clients to view the same information at the same time}
-    \resitem{Server displayed statistics and graphs on the ongoing experiment}
+    \resitem{Server displayed statistics and graphs for user selected experimental variables during the ongoing experiment}
+    \resitem{Previously stored experiment data could be displayed and streamed to the aircraft instrument}
   \end{resentry}
- 
+ \vspace{5pt}
 \end{ressection}
  
 
 
 % Education
-\vspace{15pt}
 \begin{tightressection}{education}
-  \resedentry{University of Texas at Austin}{Bachelor of Sciences (Computer Science)}{Present}{Currently taking the last three classes needed to complete my degree online}
+  \resedentry{University of Texas at Austin}{Bachelor of Sciences (Computer Science)}{Present}{Currently taking online the last three classes needed to complete my degree}
+  \vspace{-10pt}
+\end{tightressection}
+% Qualifications
+
+\begin{tightressection}{skills}
+  \begin{rescolumn}
+      \resitemcenter{Java}
+      \resitemcenter{C\#}
+      \resitemcenter{.NET}
+    \end{rescolumn}
+  \begin{rescolumn}
+      \resitemcenter{Google Web Toolkit}
+      \resitemcenter{JavaScript}
+      \resitemcenter{Python}
+    \end{rescolumn}
 \end{tightressection}
 
 % Volunteer Experience
@@ -208,15 +231,17 @@
       \resitem{Set chapter goals for the year}
     \end{ressubentry}
     \begin{ressubentry}{Alumni Secretary}
-      \resitem{Updated the Alpha Mu chapter alumni with monthly newsletters}
+      \resitem{Updated the chapter alumni with monthly newsletters}
       \resitem{Programmed and hosted the Lambda Chi Alpha Alumni Golf Tournament, benefiting the North American Food Drive}
-    \end{ressubentry}
+      \resitem{Worked with Alumni to establish a holding company to purchase fraternity house}
+      \end{ressubentry}
   \end{resentry} 
+  \vspace{-20pt}
 \end{tightressection}
      
 % Awards
-\vspace{-20pt}
 \begin{tightressection}{awards}
+  
   \begin{rescolumn}
       \resitem{Tracor/McBee Scholarship (\$1000), \\ Fall 2009 --- Spring 2010}
     \end{rescolumn}
@@ -233,22 +258,7 @@
 %  \end{itemize}
 %\end{tightressection}
  
-% Qualifications
-%\begin{tightressection}{skills and qualifications}
-%  \begin{rescolumn}
-%      \resitem{Advanced Medical First Responder (St John Ambulance, re-certified September 2010)}
-%      \resitem{CPR Healthcare Provider Level (Ottawa Paramedic Service, re-certified September 2012)}
-%      \resitem{Standard First Aid/CPR C (Ottawa Paramedic Service, re-certified September 2012)}
-%      \resitem{Oxygen Administration \& AED (Ottawa Paramedic Service, re-certifiedSeptember 2012)}
-%    \end{rescolumn}
-%  \begin{rescolumn}
-%      \resitem{Small Vessel Operator Proficiency (Transport Canada, May 2010)}
-%      \resitem{Rigid Hull Inflatable Operator Training (Transport Canada, May 2010)}
-%      \resitem{Marine Emergency Duties A3 (May 2010)}
-%      \resitem{Marine VHF Operator License with DSC option (April 2010)}
-%      \resitem{Pleasure Craft Operator's Card}
-%    \end{rescolumn}
-%\end{tightressection}
+
  
 %Boards and Committees
 %\begin{tightressection}{Boards and Committees}
