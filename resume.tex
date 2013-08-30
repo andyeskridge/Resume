@@ -8,6 +8,7 @@
 \usepackage{tabularx}
 \usepackage{multicol}
 \usepackage{enumitem}
+\usepackage{listliketab}
  
 \pagestyle{plain}
  
@@ -63,7 +64,7 @@
 % A resitem is a simple list element
 \newcommand{\resitemcenter}[1]{
     \vspace{2pt}
-    \item \begin{center} #1 \end{center}
+    \item #1
 }
  
 % An entry for memberships
@@ -143,7 +144,7 @@
 \end{tabularx}\\
  
 \begin{ressection}{experience}
-  \begin{resentry}{Programmer}{OneStepRemoved.com}{Dallas, TX}{May 2012 --- August 2013}{In my work at OneStepRemoved, I was selected to work on an internal research and development project to create a currency trading system.  Throughout this project, I worked as the lead designer and sole developer.  It has been a great opportunity to test myself in all aspects of programming and software engineering.}
+  \begin{resentry}{Programmer}{OneStepRemoved.com}{Dallas, TX}{May 2012 --- August 2013}{At OneStepRemoved, I was selected to work on an internal research and development project to create a currency trading system.  Throughout this project, I worked as the lead designer and sole developer.  It has been a great opportunity to test myself in all aspects of programming and software engineering.}
     \begin{ressubentry}{Software Engineering}
 %      \resitem{Developed Neural Networks used for predicting future market conditions in the currency market}
       \resitem{Implemented Test Driven Development procedures for use on the project.  These procedures drove development and the resulting unit tests were continually useful.}
@@ -210,24 +211,20 @@
 % Qualifications
 
 \begin{tightressection}{skills}
-  \begin{rescolumn}
-      \resitemcenter{Java}
-      \resitemcenter{C\#}
-      \resitemcenter{.NET}
-    \end{rescolumn}
-  \begin{rescolumn}
-      \resitemcenter{Google Web Toolkit}
-      \resitemcenter{JavaScript}
-      \resitemcenter{Python}
-    \end{rescolumn}
+\begin{center}
+        \begin{tabular}{l l l l l l l l l l l}
+            \textbullet &C\#& &\textbullet&.NET&&\textbullet &JavaScript& &\textbullet&Java \\
+            \textbullet &Python& &\textbullet&Google Web Toolkit&&\textbullet &DVCS& &\textbullet&C/C++
+        \end{tabular} 
+\end{center}
 \end{tightressection}
 
 % Volunteer Experience
 \begin{tightressection}{Extra-Curricular}
- \begin{resentry}{Lambda Chi Alpha}{University of Texas at Austin}{Austin, TX}{August 2008 ---May 2012}{}
+ \begin{resentry}{Lambda Chi Alpha}{University of Texas at Austin}{Austin, TX}{August 2008 --- May 2012}{}
     \begin{ressubentry}{President}
       \resitem{Lead weekly meetings}
-      \resitem{Solved disputes between chapter members}
+      \resitem{Mediated problems between chapter members}
       \resitem{Set chapter goals for the year}
     \end{ressubentry}
     \begin{ressubentry}{Alumni Secretary}
