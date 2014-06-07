@@ -1,7 +1,25 @@
-\documentclass[10pt, letterpaper, oneside]{article}
- 
-\usepackage{geometry}
+%% LyX 2.1.0 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[10pt]{article}
 \usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+\usepackage[letterpaper]{geometry}
+\geometry{verbose,tmargin=1in,bmargin=1in,lmargin=1in,rmargin=1in,headheight=0in,headsep=0in,footskip=0.3in}
+\pagestyle{plain}
+\setlength{\parskip}{0in}
+\setlength{\parindent}{0pt}
+\usepackage{verbatim}
+\usepackage{textcomp}
+
+\makeatletter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
+%% Because html converters don't know tabularnewline
+\providecommand{\tabularnewline}{\\}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
+
+ 
 \usepackage[dvipsnames]{color}
 \usepackage{baskervald}
 \usepackage{multirow}
@@ -9,13 +27,14 @@
 \usepackage{multicol}
 \usepackage{enumitem}
 \usepackage{listliketab}
+
  
-\pagestyle{plain}
+
  
-\geometry{letterpaper,tmargin=1in,bmargin=1in,lmargin=1in,rmargin=1in,headheight=0in,headsep=0in,footskip=.3in}
+
  
-\setlength{\parindent}{0in}
-\setlength{\parskip}{0in}
+
+
  
 % Name and contact information
 \newcommand{\name}{Andrew Eskridge}
@@ -39,8 +58,7 @@
  
 % An environment for a resume section
 \newenvironment{ressection}[1]{
-  \sectiontitle{#1}}
-  {\vspace{-\baselineskip}}
+  \sectiontitle{#1}}{\vspace{-\baselineskip}}
  
 % A ressection that has to be on one page, awards, education etc
 \newenvironment{tightressection}[1]{
@@ -137,136 +155,229 @@
 %%%%%%%%%%%%
 % Begin The Resume
  
-\begin{document}
- 
-\begin{tabularx}{\linewidth}{X r}
-\multirow{4}{*}{\Huge\textbf{\name}} & \\& \city \\& \email \\& \phone\\\\
-\end{tabularx}\\
- 
-\begin{ressection}{experience}
-  \begin{resentry}{Programmer}{OneStepRemoved.com}{Dallas, TX}{May 2012 --- August 2013}{At OneStepRemoved, I was selected to work on an internal research and development project to create a currency trading system.  Throughout this project, I worked as the lead designer and sole developer.  It has been a great opportunity to test myself in all aspects of programming and software engineering.}
-    \begin{ressubentry}{Software Engineering}
-%      \resitem{Developed Neural Networks used for predicting future market conditions in the currency market}
-      \resitem{Implemented Test Driven Development procedures for use on the project.  These procedures drove development and the resulting unit tests were continually useful.}
-      \resitem{Designed the architecture of the currency trading application to be modular and robust, using established software engineering principles. }
-      \resitem{Designed an API that can be used to plug in several different online currency market trading services}
-      \resitem{Optimized the application to be run in real time using sane data structures}
-      \resitem{Conducted daily status and enhancement meetings with clients focusing on identifying and resolving technical and operational issues}
-      \resitem{Developed client-server model with login authentication}
-	\end{ressubentry}
-    \begin{ressubentry}{Scientific Programming/Machine Learning}
-      \resitem{Evaluated several learning technologies and selected Neural Networks as the means of learning to predict future market condition for currency trading}
-      \resitem{Created both supervised and unsupervised learning algorithms for neural networks (Genetic Algorithm, Levenberg-Marquardt, Resilient Propagation, to name a few)}
-      \resitem{Implemented many different type of Neural Networks (Elman, Feedforward, to name a few) }
-      \resitem{Designed the application to be run without human interaction, including developing logic to automatically retrain the neural network and transition it to online use in real time}
-    \end{ressubentry}
-    \begin{ressubentry}{Security}
-      \resitem{Implemented a procedure to authenticate connections in a client-server architecture}
-      \resitem{Used RSA encryption to send encrypted messages from the server to clients}
-    \end{ressubentry}
-    \begin{ressubentry}{Distributed Networking}
-      \resitem{Designed and implemented a secure networking implementation in a server/client infrastructure}
-      \resitem{Developed a parallel processing system for training Neural Networks that ran on a 12-core computer, cutting training time from 2 days to 30 seconds}
-    \end{ressubentry}
-    \begin{ressubentry}{Tools and Languages}
-      \resitem{Made use of three different libraries in the application: Encog, ZMQ, OpenSSL}
-      \resitem{Used C\#/.NET, C and C++}
-      \resitem{Programmed in Visual Studio}
-    \end{ressubentry}
-  \end{resentry}
- 
-  \begin{resentry}{Proctor}{CS Department --- University of Texas at Austin}{Austin, TX}{August 2011 --- May 2012}{}
-    \resitem{Directed a discussion section of 20 to 30 students every week for a UT Logic class}
-%    \resitem{Graded weekly homework assignments and monthly tests}
-    \resitem{Taught programming skills in Python to 50 students}
-  \end{resentry}
- 
-  \begin{resentry}{Intern}{Virtual MGA}{Austin, TX}{August 2010 --- May 2011}{}
-    \resitem{Developed a procedure to migrate one database schema to another}
-    \resitem{Communicated requirements, bugs, and operation issues regularly with our out-of-country programming team, and updated management on programming progress}
-  \end{resentry}
- 
-  \begin{resentry}{Tutor}{CS Department --- University of Texas at Austin}{Austin, TX}{August 2010 --- May 2011}{}
-    \resitem{Developed scripts to grade students' programming assignments}
-    \resitem{Tutored programming theory and skills in Python and Java}
-%    \resitem{Graded homework assignments and tests}
-  \end{resentry}
- 
-  \begin{resentry}{Student Developer}{Institute for Human and Machine Cognition}{Pensacola, FL}{May 2010 --- August 2010}{}
-    \resitem{Developed a web-based server to collect, display, and stream experiment data collected from an aircraft instrument simulation}
-    \resitem{Server allowed multiple clients to view the same information at the same time}
-    \resitem{Server displayed statistics and graphs for user selected experimental variables during the ongoing experiment}
-    \resitem{Previously stored experiment data could be displayed and streamed to the aircraft instrument}
-  \end{resentry}
- \vspace{5pt}
-\end{ressection}
- 
 
+\makeatother
+
+\begin{document}
+\begin{tabularx}{\linewidth}{X r} 
+
+\multirow{4}{*}{\Huge\textbf{\name}} & \\& \city \\& \email \\& \phone\\\\
+
+\end{tabularx}
+
+\begin{ressection}{experience}
+
+\begin{resentry}{Software Developer}{Allegro Development}{Dallas,
+TX}{August 2013 --- Present}{} 
+
+\resitem{Implemented Test Driven Development procedures for use on
+the project. These procedures drove development and the resulting
+unit tests were continually useful.} 
+
+\end{resentry}
+
+\begin{resentry}{Programmer}{OneStepRemoved.com}{Dallas, TX}{May
+2012 --- August 2013}{At OneStepRemoved, I was selected to work
+on an internal research and development project to create a currency
+trading system. Throughout this project, I worked as the lead designer
+and sole developer. It has been a great opportunity to test myself
+in all aspects of programming and software engineering.} 
+
+\begin{ressubentry}{Software Engineering}
+
+%      \resitem{Developed Neural Networks used for predicting future market conditions in the currency market}
+
+\resitem{Implemented Test Driven Development procedures for use on
+the project. These procedures drove development and the resulting
+unit tests were continually useful.} 
+
+\resitem{Designed the architecture of the currency trading application
+to be modular and robust, using established software engineering principles.
+}
+
+\resitem{Designed an API that can be used to plug in several different
+online currency market trading services} 
+
+\resitem{Optimized the application to be run in real time using sane
+data structures} 
+
+\resitem{Conducted daily status and enhancement meetings with clients
+focusing on identifying and resolving technical and operational issues}
+
+\resitem{Developed client-server model with login authentication} 
+
+\end{ressubentry} 
+
+\begin{ressubentry}{Scientific Programming/Machine Learning}
+
+\resitem{Evaluated several learning technologies and selected Neural
+Networks as the means of learning to predict future market condition
+for currency trading} 
+
+\resitem{Created both supervised and unsupervised learning algorithms
+for neural networks (Genetic Algorithm, Levenberg-Marquardt, Resilient
+Propagation, to name a few)}
+
+\resitem{Implemented many different type of Neural Networks (Elman,
+Feedforward, to name a few) } 
+
+\resitem{Designed the application to be run without human interaction,
+including developing logic to automatically retrain the neural network
+and transition it to online use in real time}
+
+\end{ressubentry} 
+
+\begin{ressubentry}{Security}
+
+\resitem{Implemented a procedure to authenticate connections in a
+client-server architecture} 
+
+\resitem{Used RSA encryption to send encrypted messages from the
+server to clients} 
+
+\end{ressubentry}
+
+\begin{ressubentry}{Distributed Networking} 
+
+\resitem{Designed and implemented a secure networking implementation
+in a server/client infrastructure}
+
+\resitem{Developed a parallel processing system for training Neural
+Networks that ran on a 12-core computer, cutting training time from
+2 days to 30 seconds}
+
+\end{ressubentry}
+
+\begin{ressubentry}{Tools and Languages} 
+
+\resitem{Made use of three different libraries in the application:
+Encog, ZMQ, OpenSSL} 
+
+\resitem{Used C\#/.NET, C and C++} 
+
+\resitem{Programmed in Visual Studio} 
+
+\end{ressubentry} 
+
+\end{resentry}
+
+\begin{resentry}{Proctor}{CS Department --- University of Texas
+at Austin}{Austin, TX}{August 2011 --- May 2012}{}
+
+\resitem{Directed a discussion section of 20 to 30 students every
+week for a UT Logic class} 
+
+%    \resitem{Graded weekly homework assignments and monthly tests} 
+
+\resitem{Taught programming skills in Python to 50 students} 
+
+\end{resentry}
+
+\begin{comment}
+\begin{resentry}{Intern}{Virtual MGA}{Austin, TX}{August 2010
+--- May 2011}{}
+
+\resitem{Developed a procedure to migrate one database schema to
+another} 
+
+\resitem{Communicated requirements, bugs, and operation issues regularly
+with our out-of-country programming team, and updated management on
+programming progress} 
+
+\end{resentry}
+\end{comment}
+
+
+\begin{resentry}{Tutor}{CS Department --- University of Texas at
+Austin}{Austin, TX}{August 2010 --- May 2011}{} 
+
+\resitem{Developed scripts to grade students' programming assignments} 
+
+\resitem{Tutored programming theory and skills in Python and Java} 
+
+%    \resitem{Graded homework assignments and tests} 
+
+\end{resentry}
+
+\begin{resentry}{Student Developer}{Institute for Human and Machine
+Cognition}{Pensacola, FL}{May 2010 --- August 2010}{} 
+
+\resitem{Developed a web-based server to collect, display, and stream
+experiment data collected from an aircraft instrument simulation}
+
+\resitem{Server allowed multiple clients to view the same information
+at the same time}
+
+\resitem{Server displayed statistics and graphs for user selected
+experimental variables during the ongoing experiment} 
+
+\resitem{Previously stored experiment data could be displayed and
+streamed to the aircraft instrument} 
+
+\end{resentry} 
+
+\end{ressection}
 
 % Education
-\begin{tightressection}{education}
-  \resedentry{University of Texas at Austin}{Bachelor of Sciences (Computer Science)}{Present}{Currently taking online the last three classes needed to complete my degree}
-  \vspace{-10pt}
-\end{tightressection}
+
+\begin{tightressection}{education} 
+
+\resedentry{University of Texas at Austin}{Bachelor of Sciences
+(Computer Science)}{Present}{Currently taking online the last three
+classes needed to complete my degree} \vspace{-10pt}
+ \end{tightressection} 
+
 % Qualifications
 
-\begin{tightressection}{skills}
+\begin{tightressection}{skills} 
+
 \begin{center}
-        \begin{tabular}{l l l l l l l l l l l}
-            \textbullet &C\#& &\textbullet&.NET&&\textbullet &JavaScript& &\textbullet&Java \\
-            \textbullet &Python& &\textbullet&Google Web Toolkit&&\textbullet &DVCS& &\textbullet&C/C++
-        \end{tabular} 
-\end{center}
+\begin{tabular}{lllllllllll}
+\textbullet{} & C\# &  & \textbullet{} & .NET &  & \textbullet{} & JavaScript &  & \textbullet{} & Java \tabularnewline
+\textbullet{} & Python &  & \textbullet{} & Google Web Toolkit &  & \textbullet{} & DVCS &  & \textbullet{} & C/C++ \tabularnewline
+\end{tabular}
+\par\end{center}
+
 \end{tightressection}
 
 % Volunteer Experience
+
 \begin{tightressection}{Extra-Curricular}
- \begin{resentry}{Lambda Chi Alpha}{University of Texas at Austin}{Austin, TX}{August 2008 --- May 2012}{}
-    \begin{ressubentry}{President}
-      \resitem{Lead weekly meetings}
-      \resitem{Mediated problems between chapter members}
-      \resitem{Set chapter goals for the year}
-    \end{ressubentry}
-    \begin{ressubentry}{Alumni Secretary}
-      \resitem{Updated the chapter alumni with monthly newsletters}
-      \resitem{Programmed and hosted the Lambda Chi Alpha Alumni Golf Tournament, benefiting the North American Food Drive}
-      \resitem{Worked with Alumni to establish a holding company to purchase fraternity house}
-      \end{ressubentry}
-  \end{resentry} 
-  \vspace{-20pt}
+
+\begin{resentry}{Lambda Chi Alpha}{University of Texas at Austin}{Austin,
+TX}{August 2008 --- May 2012}{} 
+
+\begin{ressubentry}{President} 
+
+\resitem{Lead weekly meetings}
+
+\resitem{Mediated problems between chapter members}
+
+\resitem{Set chapter goals for the year} 
+
+\end{ressubentry} 
+
+\begin{ressubentry}{Alumni Secretary} 
+
+\resitem{Updated the chapter alumni with monthly newsletters} 
+
+\resitem{Programmed and hosted the Lambda Chi Alpha Alumni Golf Tournament,
+benefiting the North American Food Drive}
+
+\resitem{Worked with Alumni to establish a holding company to purchase
+fraternity house} 
+
+\end{ressubentry} 
+
+\end{resentry} 
+
 \end{tightressection}
-     
+
 % Awards
-\begin{tightressection}{awards}
-  
-  \begin{rescolumn}
-      \resitem{Tracor/McBee Scholarship (\$1000), \\ Fall 2009 --- Spring 2010}
-    \end{rescolumn}
-  \begin{rescolumn}
-      \resitem{University of Texas General Scholarship (\$10000), Fall 2008 --- Spring 2010}
-    \end{rescolumn}
-\end{tightressection}
- 
-% Publications
-%\begin{tightressection}{academic presentations}
-%  \begin{itemize}[noitemsep,nolistsep]
-%    \resitem{Presentation: ``Design of an Open Source Hardware Sensor and Data Logging Unit''.  Presented at the National Conference on Undergraduate Research, University of Wisconsin - La Crosse, April 2013.}
-%    \resitem{Presentation of Unpublished Paper: ``Inside Everything: Strategies to Promote Taiwan's Continued Importance in the Global Semiconductor Market''. Presented at the National Chengchi University, Taipei, October 2012.}
-%  \end{itemize}
-%\end{tightressection}
- 
 
- 
-%Boards and Committees
-%\begin{tightressection}{Boards and Committees}
-%  \boardentry{Carleton University Amateur Radio Club Executive}{Operations Executive}{September 2011 --- May 2013}
-%  \boardentry{Canadian Association of Campus Emergency Response Teams (ACERT)}{Member of the Board of Directors}{February 2012 --- May 2013}
-%  \boardentry{CUSERT Executive Selection Board}{Member (2011), Chair (2012)(2013)}{Annually in April, 2011 --- 2013}
-%  \boardentry{Adrian D.C. Chan Award Committee}{Student Member}{October 2011 --- March 2012}
-%  \boardentry{ACERT Mixer Committee}{Chair}{February 2011 --- November 2011}
-%  \boardentry{CUSERT Executive}{External-Communications}{May 2008 --- May 2009}
-%\end{tightressection}
- 
+\begin{tightressection}{awards}      \begin{rescolumn}       \resitem{Tracor/McBee
+Scholarship (\$1000), Fall 2009 --- Spring 2010
 
- 
+}     \end{rescolumn}   \begin{rescolumn}       \resitem{University
+of Texas General Scholarship (\$10000), Fall 2008 --- Spring 2010}     \end{rescolumn} \end{tightressection}
 \end{document}
