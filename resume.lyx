@@ -458,7 +458,75 @@ status collapsed
 
 \end_inset
 
+At Allegro Development, I was hired on to help start a new team, the Innovation
+ Team.
+ The team created new products, improved current applications and taught
+ development practices to the development team.
+\begin_inset ERT
+status collapsed
 
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{ressubentry}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+New Products
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+resitem{
+\end_layout
+
+\end_inset
+
+Developed and delivered a new Business Intelligence offering.
 \begin_inset ERT
 status collapsed
 
@@ -485,15 +553,274 @@ resitem{
 
 \end_inset
 
-Implemented Test Driven Development procedures for use on the project.
- These procedures drove development and the resulting unit tests were continuall
-y useful.
+Created web based implementation of our current application using RESTful
+ practices.
 \begin_inset ERT
 status collapsed
 
 \begin_layout Plain Layout
 
 }
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+resitem{
+\end_layout
+
+\end_inset
+
+Developed data access layer to keep two different database systems in sync.
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{ressubentry}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{ressubentry}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+Current Applications
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+resitem{
+\end_layout
+
+\end_inset
+
+Improved the framework used by other developers to develop the current applicati
+on.
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+resitem{
+\end_layout
+
+\end_inset
+
+Extensively profiled the application and improved performance
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{ressubentry}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{ressubentry}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+Development Practices
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+resitem{
+\end_layout
+
+\end_inset
+
+Reworked the current build process to use industry standard practices.
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+resitem{
+\end_layout
+
+\end_inset
+
+Developed new practices for storing source code in VCS
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{ressubentry}
 \end_layout
 
 \end_inset
@@ -647,23 +974,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-%      
-\backslash
-resitem{Developed Neural Networks used for predicting future market conditions
- in the currency market}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
 
 \backslash
 resitem{
@@ -769,34 +1079,6 @@ status collapsed
 \end_inset
 
  
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-resitem{
-\end_layout
-
-\end_inset
-
-Conducted daily status and enhancement meetings with clients focusing on
- identifying and resolving technical and operational issues
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -935,34 +1217,6 @@ status collapsed
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-resitem{
-\end_layout
-
-\end_inset
-
-Implemented many different type of Neural Networks (Elman, Feedforward,
- to name a few) 
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
- 
 \end_layout
 
 \begin_layout Standard
@@ -1237,141 +1491,6 @@ status collapsed
 
 
 \backslash
-begin{ressubentry}
-\end_layout
-
-\end_inset
-
-
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-{
-\end_layout
-
-\end_inset
-
-Tools and Languages
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-resitem{
-\end_layout
-
-\end_inset
-
-Made use of three different libraries in the application: Encog, ZMQ, OpenSSL
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-resitem{
-\end_layout
-
-\end_inset
-
-Used C#/.NET, C and C++
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-resitem{
-\end_layout
-
-\end_inset
-
-Programmed in Visual Studio
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{ressubentry}
-\end_layout
-
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
 end{resentry}
 \end_layout
 
@@ -1426,7 +1545,7 @@ status collapsed
 
 \end_inset
 
-August 2011 --- May 2012
+August 2010 --- May 2012
 \begin_inset ERT
 status collapsed
 
@@ -1530,245 +1649,6 @@ status collapsed
 
 
 \backslash
-end{resentry}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Comment
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{resentry}{
-\end_layout
-
-\end_inset
-
-Intern
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-}{
-\end_layout
-
-\end_inset
-
-Virtual MGA
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-}{
-\end_layout
-
-\end_inset
-
-Austin, TX
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-}{
-\end_layout
-
-\end_inset
-
-August 2010 --- May 2011
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
-
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-{}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-resitem{
-\end_layout
-
-\end_inset
-
-Developed a procedure to migrate one database schema to another
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-resitem{
-\end_layout
-
-\end_inset
-
-Communicated requirements, bugs, and operation issues regularly with our
- out-of-country programming team, and updated management on programming
- progress
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{resentry}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{resentry}{
-\end_layout
-
-\end_inset
-
-Tutor
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-}{
-\end_layout
-
-\end_inset
-
-CS Department --- University of Texas at Austin
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-}{
-\end_layout
-
-\end_inset
-
-Austin, TX
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-}{
-\end_layout
-
-\end_inset
-
-August 2010 --- May 2011
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
-
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-{}
-\end_layout
-
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
 resitem{
 \end_layout
 
@@ -1808,22 +1688,6 @@ status collapsed
 \begin_layout Plain Layout
 
 }
-\end_layout
-
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-%    
-\backslash
-resitem{Graded homework assignments and tests}
 \end_layout
 
 \end_inset
@@ -2246,8 +2110,11 @@ status collapsed
 \begin_layout Standard
 \align center
 \begin_inset Tabular
-<lyxtabular version="3" rows="2" columns="11">
+<lyxtabular version="3" rows="2" columns="14">
 <features rotate="0" tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
 <column alignment="left" valignment="top">
 <column alignment="left" valignment="top">
 <column alignment="left" valignment="top">
@@ -2359,6 +2226,33 @@ Java
 
 \end_inset
 </cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+•
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+MSBuild
+\end_layout
+
+\end_inset
+</cell>
 </row>
 <row>
 <cell alignment="left" valignment="top" usebox="none">
@@ -2456,6 +2350,33 @@ DVCS
 
 \begin_layout Plain Layout
 C/C++ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+•
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+RESTful Services
 \end_layout
 
 \end_inset
