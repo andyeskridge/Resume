@@ -403,7 +403,7 @@ begin{resentry}{
 
 \end_inset
 
-Software Developer
+Software Developer II
 \begin_inset ERT
 status collapsed
 
@@ -499,7 +499,7 @@ status collapsed
 
 \end_inset
 
-New Products
+Business Intelligence Portal
 \begin_inset ERT
 status collapsed
 
@@ -526,35 +526,8 @@ resitem{
 
 \end_inset
 
-Developed and delivered a new Business Intelligence offering.
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-resitem{
-\end_layout
-
-\end_inset
-
-Created web based implementation of our current application using RESTful
- practices.
+Developed and delivered a new Business Intelligence Portal using C#, MVC5
+ and SQL Server.
 \begin_inset ERT
 status collapsed
 
@@ -581,7 +554,62 @@ resitem{
 
 \end_inset
 
-Developed data access layer to keep two different database systems in sync.
+Used Entity Framework to manage data models and database migrations.
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+resitem{
+\end_layout
+
+\end_inset
+
+Created over twenty BI reports using Tableau.
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+resitem{
+\end_layout
+
+\end_inset
+
+Developed data sync tool to keep Oracle and MS SQL Server in sync using
+ an ETL process.
 \begin_inset ERT
 status collapsed
 
@@ -635,7 +663,7 @@ status collapsed
 
 \end_inset
 
-Current Applications
+Application Installer
 \begin_inset ERT
 status collapsed
 
@@ -662,8 +690,8 @@ resitem{
 
 \end_inset
 
-Improved the framework used by other developers to develop the current applicati
-on.
+Created an Application Installer to simplify the process of installing the
+ Allegro application.
 \begin_inset ERT
 status collapsed
 
@@ -690,7 +718,7 @@ resitem{
 
 \end_inset
 
-Extensively profiled the application and improved performance
+Used WiX to set up IIS and configure the application correctly.
 \begin_inset ERT
 status collapsed
 
@@ -744,7 +772,7 @@ status collapsed
 
 \end_inset
 
-Development Practices
+Build Process
 \begin_inset ERT
 status collapsed
 
@@ -771,7 +799,7 @@ resitem{
 
 \end_inset
 
-Reworked the current build process to use industry standard practices.
+Completely rewrote the build process to speed up build time by 4x.
 \begin_inset ERT
 status collapsed
 
@@ -798,7 +826,8 @@ resitem{
 
 \end_inset
 
-Developed new practices for storing source code in VCS
+New build process is much more reliable and follows industry standards using
+ MSBuild and C#.
 \begin_inset ERT
 status collapsed
 
@@ -1011,7 +1040,7 @@ resitem{
 \end_inset
 
 Designed the architecture of the currency trading application to be modular
- and robust, using established software engineering principles.
+ and robust, using established software engineering principles in C#.
  
 \begin_inset ERT
 status collapsed
@@ -1041,33 +1070,6 @@ resitem{
 
 Designed an API that can be used to plug in several different online currency
  market trading services
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-resitem{
-\end_layout
-
-\end_inset
-
-Optimized the application to be run in real time using sane data structures
 \begin_inset ERT
 status collapsed
 
@@ -2295,7 +2297,7 @@ Python
 \begin_inset Text
 
 \begin_layout Plain Layout
-Google Web Toolkit
+Entity Framework
 \end_layout
 
 \end_inset
