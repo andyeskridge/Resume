@@ -224,7 +224,6 @@
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
-\author 2090082705 "andy" 
 \end_header
 
 \begin_body
@@ -538,6 +537,7 @@ The majority of my work at ProviderScience focused on the design and development
  framework.
  I was responsible for the complete backend from extraction of raw data
  to reporting the predicted labor requirements.
+ I was also responsible for setting up the infrastructure on Azure.
  Specifically, I
 \begin_inset ERT
 status collapsed
@@ -884,16 +884,8 @@ status collapsed
 
 \end_inset
 
-One
-\change_deleted 2090082705 1454348853
- 
-\change_unchanged
- of our cable clients had a major problem determining
-\change_deleted 2090082705 1454348853
- 
-\change_unchanged
- when their payment processor was unresponsive, and needed a way to alert
- them when it did.
+One of our cable clients had a major problem determining when their payment
+ processor was unresponsive, and needed a way to alert them when it did.
  To do this, I
 \begin_inset ERT
 status collapsed
@@ -1066,7 +1058,7 @@ resitem{
 
 
 \series bold
-Used D3 to create charts and reports
+Used D3 and Angular to create charts and reports
 \series default
  that were interactive and responsive.
  The charts respond logically to what the user is trying to do, showing
@@ -1187,8 +1179,9 @@ status collapsed
 \end_inset
 
 At Allegro Development, I was hired to help start a new Innovation Team,
- which was responsible for creating new products, improving current applications
- and teaching development practices to the development team.
+ which was responsible for architecting and creating new products, improving
+ current applications and teaching development practices to the development
+ team.
 \begin_inset ERT
 status collapsed
 
@@ -1253,8 +1246,8 @@ resitem{
 
 \end_inset
 
-Developed and delivered a new Business Intelligence Portal using C#, MVC5
- and SQL Server.
+Developed and delivered a new Business Intelligence Portal using C#, MVC5,
+ SQL Server and hosted it on AWS.
 \begin_inset ERT
 status collapsed
 
@@ -1772,10 +1765,7 @@ resitem{
 \end_inset
 
 Designed an API that can be used to plug in several different online currency
- market trading services
-.
-\lang english
-
+ market trading services.
 \begin_inset ERT
 status collapsed
 
@@ -2725,7 +2715,7 @@ status collapsed
 \begin_layout Standard
 \align center
 \begin_inset Tabular
-<lyxtabular version="3" rows="6" columns="11">
+<lyxtabular version="3" rows="8" columns="11">
 <features rotate="0" tabularvalignment="middle">
 <column alignment="left" valignment="top">
 <column alignment="left" valignment="top">
@@ -3339,6 +3329,208 @@ Entity Framework
 
 \begin_layout Plain Layout
 DVCS 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+•
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Azure
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+•
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+AWS
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+•
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+MSBuild
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+•
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Bootstrap
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+•
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+WebAPI
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+•
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Web Services
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+•
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Multithreading
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+•
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Redis
 \end_layout
 
 \end_inset
